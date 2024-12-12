@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet"  href="{% static 'css/main.css' %}">
+
+
+{% block content %}
+
+
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-5">
+          <div class="card rounded-3">
+            <div class="card-body p-4">
+              <div class="text-center mb-4">
+                		
+                <h1><b>PAYMENT</b></h1>
+              </div>
+            
+
+                  
+<form>
+            
+    
+                <div class="form-outline mb-4">
+                  <input type="text" id="formControlLgXsd" class="form-control form-control-lg"  required=""/>
+                  <label class="form-label" for="formControlLgXsd">Cardholder's Name</label>
+                </div>
+    
+                <div class="row mb-4">
+                  <div class="col-7">
+                    <div class="form-outline">
+                      <input type="text" id="formControlLgXM" class="form-control form-control-lg" required="" pattern="[0-9]{16}"/>
+                      <label class="form-label" for="formControlLgXM">Card Number</label>
+                    </div>
+                  </div>
+
+                  
+                  
+    
+                <button  class="payq" type="Submit"><a href="{% url 'sucess' %}" style="text-decoration: none;">Make Payment</a></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+  {% endblock %}

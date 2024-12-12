@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet"  href="{% static 'css/main.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content9 %}
+    <div class="items">
+    {% for i in get %}
+
+
+       
+            <div class="searchitem">
+                <a href="{% url 'deta' i.name %}" style="text-decoration: none;">
+                    <p>{{i.name}}</p>
+                <img class="im2" src="/medicines/{{i.image}}">
+                <p>{{i.description}}</p>
+                <p>{{i.price}}</p>
+
+              
+
+          
+        </div>
+        
+</div>
+    {% endfor %}
+
+    {% endblock %}
+</body>
+</html>
+  

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block banner_slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/IMG-20231211-WA0028.jpg' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images/WhatsApp Image 2024-01-08 at 11.15.31_830e048e.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+   
+  </div>
+</div>
+
+
+
+<div class="second">
+  <h1>SEARCH OUR HERBS</h1>
+  <img class="ani4" src="{% static 'images/IMG-20231211-WA0031.jpg' %}">
+  <img class="ani5" src="{% static 'images/IMG-20231211-WA0032.jpg' %}">
+  <img class="ani6" src="{% static 'images/IMG-20231211-WA0033.jpg' %}">
+  <img class="ani7" src="{% static 'images/IMG-20231211-WA0029.jpg' %}">
+</div>
+{% endblock banner_slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+            Herbal offers a wide range of products.Easily can identify our products. A medicinal plant is any plant which, in one or more of its organs, contains substances that can be used for therapeutic purposes or which are precursors for the synthesis of useful drugs.
+          </small>
+    </div>
+</div>
+    
+{% endblock information%}

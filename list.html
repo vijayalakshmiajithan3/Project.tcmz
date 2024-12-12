@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content9 %}
+
+<div class="la">
+    {% for j in pr %}
+    <div class="z">
+        <a href="{% url 'deta' j.name %}" style="text-decoration: none;"><p>{{j.name}}</p>
+        <img class="im2" src="/medicines/{{j.image}}">
+      
+        <button class="btn89"><a href="{% url 'cate'  %}" style="text-decoration: none;">Back</button></a> 
+  
+</div>
+
+    {% endfor %}
+</div>
+
+{% endblock %}
